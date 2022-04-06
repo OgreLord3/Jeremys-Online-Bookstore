@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!-- Jeremy Gilmore's CSC 242 Site assignment -->
+<!-- Recreate the previous Forms assignment in PHP form using common header and footer files -->
+
+<html>
+   <head>
+     <meta charset="utf-8">
+     <title> J.O.B </title>
+	 <!-- Must link the external style sheet -->
+	 <link rel = "stylesheet" type = "text/css" href = "styles.css">
+   </head>
+
+   <body>
+	 <table>
+	 <thead>
+		<tr>
+			<!-- use colspan to have one row span the width of four columns -->
+			<th colspan = "4" class = "outer-table">
+				<h1> Jeremy's Online Bookstore </h1>
+			</th>
+		</tr>
+		<tr>
+			<th class = "outer-table"> <a class = "nodec" href = "index.php"> Home </a> </th>
+			<th class = "outer-table"> <a class = "nodec" href = "browse.php"> Browse </a> </th>
+			<th class = "outer-table"> <div class="dropdown">
+					<div class="dropbox"> My Shopping Cart </div>
+					<div class="dropdown-content"> 
+						<a class = "nodec" href="showCart.php"> Show Cart </a>
+						<a class = "nodec" href="clearCart.php"> Clear Cart </a>
+						<a class = "nodec" href="checkOrders.php"> My Orders </a>
+					</div>
+				</div>
+			</th>
+			<th class = "outer-table"> <div class="dropdown">
+					<div class="dropbox"> My Account </div>
+					<div class="dropdown-content"> 
+						<a class = "nodec" href="loginPage.php"> Login </a>
+						<a class = "nodec" href="logout.php"> Logout </a>
+						<a class = "nodec" href="create.php"> Create </a>
+					</div>
+				</div>
+			</th>
+		</tr>
+		</thead>
+	    <tbody>
+		<tr>
+			<td colspan = "4" class = "outer-table">
